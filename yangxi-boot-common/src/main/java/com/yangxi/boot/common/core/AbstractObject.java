@@ -74,17 +74,17 @@ public abstract class AbstractObject {
 
 				// 如果判断某个字段是List类型的
 				if (!Collection.class.isAssignableFrom(thisField.getType())) {
-					Class<?> sourceFeildClazz = thisField.getType();
-					if (sourceFeildClazz == String.class || sourceFeildClazz == Long.class
-							|| sourceFeildClazz.toString().equals("long") || thisField.getType() == Integer.class
-							|| sourceFeildClazz.toString().equals("int") || sourceFeildClazz == Short.class
-							|| sourceFeildClazz.toString().equals("short") || sourceFeildClazz == Double.class
-							|| sourceFeildClazz.toString().equals("double") || sourceFeildClazz == Float.class
-							|| sourceFeildClazz.toString().equals("float") || sourceFeildClazz == BigDecimal.class
-							|| sourceFeildClazz == Boolean.class || sourceFeildClazz.toString().equals("boolean")
-							|| sourceFeildClazz == Date.class || sourceFeildClazz == Character.class
-							|| sourceFeildClazz.toString().equals("char") || sourceFeildClazz == Byte.class
-							|| sourceFeildClazz.toString().equals("byte") || sourceFeildClazz == java.sql.Date.class) {
+					Class<?> sourceFieldClazz = thisField.getType();
+					if (sourceFieldClazz == String.class || sourceFieldClazz == Long.class
+							|| "long".equals(sourceFieldClazz.toString()) || thisField.getType() == Integer.class
+							|| "int".equals(sourceFieldClazz.toString()) || sourceFieldClazz == Short.class
+							|| "short".equals(sourceFieldClazz.toString()) || sourceFieldClazz == Double.class
+							|| "double".equals(sourceFieldClazz.toString()) || sourceFieldClazz == Float.class
+							|| "float".equals(sourceFieldClazz.toString()) || sourceFieldClazz == BigDecimal.class
+							|| sourceFieldClazz == Boolean.class || "boolean".equals(sourceFieldClazz.toString())
+							|| sourceFieldClazz == Date.class || sourceFieldClazz == Character.class
+							|| "char".equals(sourceFieldClazz.toString()) || sourceFieldClazz == Byte.class
+							|| "byte".equals(sourceFieldClazz.toString()) || sourceFieldClazz == java.sql.Date.class) {
 						continue;
 					}
 					// 判断某个字段是否AbstractObject类型的
@@ -211,10 +211,10 @@ public abstract class AbstractObject {
 	/**
 	 * 将一个List克隆到另外一个List
 	 *
-	 * @param sourceList
-	 * @param targetList
-	 * @param cloneTargetClazz
-	 * @param cloneDirection
+	 * @param sourceList 原集合对象
+	 * @param targetList 目标集合对象
+	 * @param cloneTargetClazz 目标集合对象中元素类型
+	 * @param cloneDirection 深度克隆
 	 */
 	private void cloneList(Collection sourceList, Collection targetList, Class cloneTargetClazz, Integer cloneDirection) {
 		for (Object object : sourceList) {
@@ -232,7 +232,7 @@ public abstract class AbstractObject {
 	/**
 	 * 获取List集合的泛型类型
 	 *
-	 * @param targetField
+	 * @param targetField 目标字段
 	 * @return
 	 */
 	private Class<?> getTargetListGenericType(Field targetField) {
@@ -247,7 +247,7 @@ public abstract class AbstractObject {
 	/**
 	 * 浅度克隆时原对象List属性的处理
 	 *
-	 * @param target
+	 * @param target 目标对象
 	 * @return
 	 */
 	private <T> T getTarget(T target) throws Exception {
@@ -266,7 +266,7 @@ public abstract class AbstractObject {
 			}
 
 			Class<?> targetListGenericTypeClazz = getTargetListGenericType(field);
-			if(!isAbstractObjectClass(targetListGenericTypeClazz)) {
+			if(targetListGenericTypeClazz != null && !isAbstractObjectClass(targetListGenericTypeClazz)) {
 				continue;
 			}
 
@@ -282,7 +282,7 @@ public abstract class AbstractObject {
 
 	/**
 	 * 判断某个Class的对象类是否继承了AbstractObject
-	 * @param clazz
+	 * @param clazz class对象
 	 * @return
 	 */
 	private boolean isAbstractObjectClass(Class clazz) {
