@@ -19,8 +19,8 @@ public class JWTUtil {
     /**
      * 过期时间，一周
      */
-    //private  static final long EXPIRE = 60000 * 60 * 24 * 7;
-    private  static final long EXPIRE = 10 * 60 * 1000;
+    private  static final long EXPIRE = 60000 * 60 * 24 * 7;
+//    private  static final long EXPIRE = 10 * 60 * 1000;
 
 
     /**

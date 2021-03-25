@@ -1,5 +1,6 @@
 package com.yangxi.boot.sample.domain.dto;
 
+import com.yangxi.boot.common.domain.dto.BaseDTO;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -23,10 +24,10 @@ public class StudentDTO extends BaseDTO {
     @ApiModelProperty("名称")
     private String name;
 
-    @ApiModelProperty("年龄")
+    @ApiModelProperty(value = "年龄", example = "20")
     private Integer age;
 
-    @ApiModelProperty("性别")
+    @ApiModelProperty(value = "性别", example = "1")
     private Integer sex;
 
 }

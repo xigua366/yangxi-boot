@@ -1,5 +1,6 @@
 package com.yangxi.boot.sample.domain.request;
 
+import com.yangxi.boot.common.domain.request.BaseRequest;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;

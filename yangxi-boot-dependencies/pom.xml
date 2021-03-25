@@ -17,7 +17,14 @@
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
-	<name>yangxi-boot-dependencies</name>
+	<developers>
+		<developer>
+			<name>yangxi</name>
+			<email>xigua366@163.com</email>
+			<organization>xigua366</organization>
+			<organizationUrl>https://www.xigua366.cn</organizationUrl>
+		</developer>
+	</developers>
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -87,6 +94,28 @@
 				<groupId>io.springfox</groupId>
 				<artifactId>springfox-swagger2</artifactId>
 				<version>2.9.2</version>
+				<exclusions>
+					<exclusion>
+						<groupId>io.swagger</groupId>
+						<artifactId>swagger-annotations</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>io.swagger</groupId>
+						<artifactId>swagger-models</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+
+			<dependency>
+				<groupId>io.swagger</groupId>
+				<artifactId>swagger-annotations</artifactId>
+				<version>1.5.22</version>
+			</dependency>
+
+			<dependency>
+				<groupId>io.swagger</groupId>
+				<artifactId>swagger-models</artifactId>
+				<version>1.5.22</version>
 			</dependency>
 
 			<dependency>
@@ -101,26 +130,11 @@
 				<version>6.0.17.Final</version>
 			</dependency>
 
-			<!-- cglib的BeanCopier需要的依赖 -->
+			<!-- yangxi-boot 本身的一些依赖 -->
 			<dependency>
-				<groupId>asm</groupId>
-				<artifactId>asm</artifactId>
-				<version>3.3.1</version>
-			</dependency>
-			<dependency>
-				<groupId>asm</groupId>
-				<artifactId>asm-commons</artifactId>
-				<version>3.3.1</version>
-			</dependency>
-			<dependency>
-				<groupId>asm</groupId>
-				<artifactId>asm-util</artifactId>
-				<version>3.3.1</version>
-			</dependency>
-			<dependency>
-				<groupId>cglib</groupId>
-				<artifactId>cglib-nodep</artifactId>
-				<version>2.2.2</version>
+				<groupId>com.yangxi.boot</groupId>
+				<artifactId>yangxi-boot-common</artifactId>
+				<version>1.0.0-SNAPSHOT</version>
 			</dependency>
 
 		</dependencies>

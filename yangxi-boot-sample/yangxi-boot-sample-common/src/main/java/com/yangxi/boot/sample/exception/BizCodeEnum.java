@@ -1,12 +1,16 @@
 package com.yangxi.boot.sample.exception;
 
+import com.yangxi.boot.common.excetion.BaseBizCodeEnum;
+
 /**
  *
- *  @Description 状态码定义约束，共6位数，前三位代表服务，后三位代表接口
- *  比如 商品服务210,购物车是220、用户服务230，403代表权限
+ * @author yangxi
+ *
+ * 状态码定义约束，共6位数，前三位代表服务，后三位代表接口
+ * 比如 商品服务210,购物车是220、用户服务230，403代表权限
  *
  **/
-public enum BizCodeEnum {
+public enum BizCodeEnum implements BaseBizCodeEnum {
 
     /**
      * 通用操作码
@@ -95,20 +99,22 @@ public enum BizCodeEnum {
      */
     FILE_UPLOAD_USER_IMG_FAIL(600101,"用户头像文件上传失败");
 
-    private String message;
-
     private int code;
 
-    BizCodeEnum(int code, String message){
+    private String msg;
+
+    BizCodeEnum(int code, String msg){
         this.code = code;
-        this.message = message;
+        this.msg = msg;
     }
 
+    @Override
     public int getCode() {
         return code;
     }
 
-    public String getMessage() {
-        return message;
+    @Override
+    public String getMsg() {
+        return msg;
     }
 }

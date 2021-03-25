@@ -1,5 +1,6 @@
 package com.yangxi.boot.sample.domain.query;
 
+import com.yangxi.boot.common.domain.query.BasePageQuery;
 import lombok.Data;
 
 /**
@@ -7,7 +8,7 @@ import lombok.Data;
  * @version 1.0
  */
 @Data
-public class StudentQuery extends BaseQuery {
+public class StudentQuery extends BasePageQuery {
 
     private static final long serialVersionUID = 1L;
 

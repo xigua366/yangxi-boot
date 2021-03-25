@@ -1,10 +1,9 @@
 package com.yangxi.boot.sample.domain.vo;
 
+import com.yangxi.boot.common.domain.vo.BaseVO;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
-
-import java.io.Serializable;
 
 /**
  * @author yangxi
@@ -12,7 +11,7 @@ import java.io.Serializable;
  */
 @Data
 @ApiModel
-public class StudentVO implements Serializable {
+public class StudentVO extends BaseVO {
 
     private static final long serialVersionUID = 1L;
 

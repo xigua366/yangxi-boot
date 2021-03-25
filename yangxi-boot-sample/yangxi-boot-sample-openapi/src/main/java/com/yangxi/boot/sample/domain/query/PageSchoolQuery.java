@@ -1,5 +1,6 @@
 package com.yangxi.boot.sample.domain.query;
 
+import com.yangxi.boot.common.domain.query.BasePageQuery;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -10,7 +11,7 @@ import lombok.Data;
  */
 @Data
 @ApiModel
-public class PageSchoolQuery extends BaseQuery {
+public class PageSchoolQuery extends BasePageQuery {
 
     private static final long serialVersionUID = 1L;
 

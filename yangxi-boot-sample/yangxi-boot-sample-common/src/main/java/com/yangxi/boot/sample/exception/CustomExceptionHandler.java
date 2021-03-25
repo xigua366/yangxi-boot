@@ -1,7 +1,7 @@
 package com.yangxi.boot.sample.exception;
 
-import com.yangxi.boot.sample.exception.MyException;
-import com.yangxi.boot.sample.utils.JsonData;
+import com.yangxi.boot.common.core.JsonData;
+import com.yangxi.boot.common.excetion.BizException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -19,10 +19,10 @@ public class CustomExceptionHandler {
     @ResponseBody
     public JsonData handle(Exception e) {
 
-        if(e instanceof MyException) {
+        if(e instanceof BizException) {
             log.error("[ 业务异常 ]", e);
-            MyException myException = (MyException) e;
-            return JsonData.buildError(myException.getCode(), myException.getMsg());
+            BizException bizException = (BizException) e;
+            return JsonData.buildError(bizException.getCode(), bizException.getMsg());
         } else {
             log.error("[ 系统异常 ]", e);
             return JsonData.buildError("全局异常，未知错误");

@@ -9,7 +9,14 @@
     <version>1.0.0-SNAPSHOT</version>
     <packaging>maven-archetype</packaging>
 
-    <name>yangxi-boot-archetype</name>
+    <developers>
+        <developer>
+            <name>yangxi</name>
+            <email>xigua366@163.com</email>
+            <organization>xigua366</organization>
+            <organizationUrl>https://www.xigua366.cn</organizationUrl>
+        </developer>
+    </developers>
 
     <properties>
         <java.version>1.8</java.version>
