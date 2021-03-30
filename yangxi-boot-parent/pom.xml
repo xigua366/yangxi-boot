@@ -131,6 +131,12 @@
 			<artifactId>yangxi-boot-common</artifactId>
 		</dependency>
 
+		<!-- yangxi-boot 本身的starter依赖 -->
+		<dependency>
+			<groupId>com.yangxi.boot</groupId>
+			<artifactId>yangxi-boot-starter-web</artifactId>
+		</dependency>
+
 	</dependencies>
 	
 	<repositories>

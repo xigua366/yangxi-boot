@@ -137,6 +137,13 @@
 				<version>1.0.0-SNAPSHOT</version>
 			</dependency>
 
+			<!-- yangxi-boot 本身的starter依赖 -->
+			<dependency>
+				<groupId>com.yangxi.boot</groupId>
+				<artifactId>yangxi-boot-starter-web</artifactId>
+				<version>1.0.0-SNAPSHOT</version>
+			</dependency>
+
 		</dependencies>
 	</dependencyManagement>
 

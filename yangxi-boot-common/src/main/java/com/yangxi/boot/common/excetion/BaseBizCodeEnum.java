@@ -8,6 +8,6 @@ package com.yangxi.boot.common.excetion;
  **/
 public interface BaseBizCodeEnum {
 
-    public int getCode();
-    public String getMsg();
+    Integer getCode();
+    String getMsg();
 }

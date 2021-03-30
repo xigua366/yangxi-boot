@@ -53,12 +53,11 @@ public class PageResult<T> implements Serializable {
             this.totalElements = page.getTotal();
             this.totalPages = page.getPages();
             this.content = page.getRecords();
-            if(page.getTotal() < page.getSize()) {
-                this.numberOfElements = page.getTotal();
+            if(this.content != null && !this.content.isEmpty()) {
+                this.numberOfElements = this.content.size();
             } else {
-                this.numberOfElements = page.getSize();
+                this.numberOfElements = 0L;
             }
-
         }
     }
 

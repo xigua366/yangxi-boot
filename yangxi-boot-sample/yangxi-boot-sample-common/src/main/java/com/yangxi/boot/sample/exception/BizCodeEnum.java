@@ -3,7 +3,7 @@ package com.yangxi.boot.sample.exception;
 import com.yangxi.boot.common.excetion.BaseBizCodeEnum;
 
 /**
- *
+ * 业务错误码枚举定义
  * @author yangxi
  *
  * 状态码定义约束，共6位数，前三位代表服务，后三位代表接口
@@ -99,17 +99,17 @@ public enum BizCodeEnum implements BaseBizCodeEnum {
      */
     FILE_UPLOAD_USER_IMG_FAIL(600101,"用户头像文件上传失败");
 
-    private int code;
+    private Integer code;
 
     private String msg;
 
-    BizCodeEnum(int code, String msg){
+    BizCodeEnum(Integer code, String msg){
         this.code = code;
         this.msg = msg;
     }
 
     @Override
-    public int getCode() {
+    public Integer getCode() {
         return code;
     }
 
