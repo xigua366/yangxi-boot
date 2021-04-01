@@ -20,6 +20,9 @@ public abstract class BaseEntity extends AbstractObject implements Serializable 
     @TableId(value = "id", type = IdType.AUTO)
     private Long id;
 
+    @TableField(value = "tenant_id")
+    private Long tenantId;
+
     private String remark;
 
     @TableField(value = "created_time", fill = FieldFill.INSERT)
@@ -34,6 +37,14 @@ public abstract class BaseEntity extends AbstractObject implements Serializable 
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public Long getTenantId() {
+        return tenantId;
+    }
+
+    public void setTenantId(Long tenantId) {
+        this.tenantId = tenantId;
     }
 
     public String getRemark() {
