@@ -10,7 +10,17 @@
 # yangxi-boot-parent
 基础父工程，对标spring-boot-parent
 
+# yangxi-boot-common
+yang-boot框架自定义扩展的核心类
+
+# yangxi-boot-starters
+yang-boot框架自定义扩展的starter工程，对标spring-boot-starters
+
+# yangxi-boot-sample
+yang-boot框架使用示例工程
+
 ## 从archetype中生成项目
+clone代码之后，在本地对yangxi-boot进行构建：mvn clean install
 
 [使用示例]
 
@@ -39,17 +49,6 @@ mvn archetype:generate                                    \
 
 这个过程可能会很慢，但是如果你之前已经成功执行过一次后，速度会快一点。增加这个参数：-DarchetypeCatalag=local
 
-
-## 运行
-```
-mvn spring-boot:run
-```
-
-## 部署
-
-```
-mvn clean deploy
-```
 
 ## 相关文档
 

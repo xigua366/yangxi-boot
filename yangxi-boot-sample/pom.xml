@@ -29,31 +29,6 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 	</properties>
 
-
-	<dependencyManagement>
-		<dependencies>
-
-			<!-- 代码自动生成依赖 begin -->
-			<dependency>
-				<groupId>com.baomidou</groupId>
-				<artifactId>mybatis-plus-generator</artifactId>
-				<version>3.4.1</version>
-				<scope>test</scope>
-				<optional>true</optional>
-			</dependency>
-
-			<!-- velocity -->
-			<dependency>
-				<groupId>org.apache.velocity</groupId>
-				<artifactId>velocity-engine-core</artifactId>
-				<version>2.0</version>
-				<scope>test</scope>
-				<optional>true</optional>
-			</dependency>
-			<!-- 代码自动生成依赖 end-->
-		</dependencies>
-	</dependencyManagement>
-
 	<repositories>
 		<!--阿里云主仓库，代理了maven central和jcenter仓库 -->
 		<repository>

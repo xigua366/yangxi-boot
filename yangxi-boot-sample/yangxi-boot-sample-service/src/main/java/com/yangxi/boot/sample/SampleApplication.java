@@ -4,7 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * 面向C端会员的api
+ * 面向C端会员的服务
  *
  * 登录采用 jwt + spring mvc拦截器实现
  * 不做rbac的权限管理功能
