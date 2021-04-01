@@ -1,9 +1,9 @@
 package ${package}.service;
 
-import com.yangxi.boot.common.core.PageResult;
-import com.yangxi.boot.sample.domain.dto.PageSchoolDTO;
-import com.yangxi.boot.sample.domain.dto.SchoolDTO;
-import com.yangxi.boot.sample.domain.query.PageSchoolQuery;
+import com.yangxi.boot.framework.core.PageResult;
+import ${package}.domain.dto.PageSchoolDTO;
+import ${package}.domain.dto.SchoolDTO;
+import ${package}.domain.query.PageSchoolQuery;
 
 /**
  * 学校信息Service组件

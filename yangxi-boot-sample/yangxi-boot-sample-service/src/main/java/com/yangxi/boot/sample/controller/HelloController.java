@@ -1,6 +1,6 @@
 package com.yangxi.boot.sample.controller;
 
-import com.yangxi.boot.common.core.JsonData;
+import com.yangxi.boot.framework.core.JsonData;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.GetMapping;

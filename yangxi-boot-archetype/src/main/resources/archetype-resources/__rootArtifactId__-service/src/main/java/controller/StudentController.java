@@ -1,9 +1,9 @@
 package ${package}.controller;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.yangxi.boot.common.core.JsonData;
-import com.yangxi.boot.common.core.PageResult;
-import com.yangxi.boot.common.utils.ObjectCloneUtil;
+import com.yangxi.boot.framework.core.JsonData;
+import com.yangxi.boot.framework.core.PageResult;
+import com.yangxi.boot.framework.utils.ObjectCloneUtil;
 import ${package}.domain.dto.PageStudentDTO;
 import ${package}.domain.dto.SchoolDTO;
 import ${package}.domain.dto.StudentDTO;

@@ -1,6 +1,6 @@
 package com.yangxi.boot.sample.service;
 
-import com.yangxi.boot.common.core.JsonData;
+import com.yangxi.boot.framework.core.JsonData;
 import com.yangxi.boot.sample.domain.request.LoginRequest;
 import com.yangxi.boot.sample.domain.request.RegisterRequest;
 

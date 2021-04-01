@@ -133,7 +133,13 @@
 			<!-- yangxi-boot 本身的一些依赖 -->
 			<dependency>
 				<groupId>com.yangxi.boot</groupId>
-				<artifactId>yangxi-boot-common</artifactId>
+				<artifactId>yangxi-boot-framework-core</artifactId>
+				<version>1.0.0-SNAPSHOT</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.yangxi.boot</groupId>
+				<artifactId>yangxi-boot-framework-web</artifactId>
 				<version>1.0.0-SNAPSHOT</version>
 			</dependency>
 

@@ -1,6 +1,6 @@
 package com.yangxi.boot.sample.domain.vo;
 
-import com.yangxi.boot.common.domain.vo.BaseVO;
+import com.yangxi.boot.framework.domain.vo.BaseVO;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;

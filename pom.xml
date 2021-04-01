@@ -28,7 +28,7 @@
 
 	<modules>
 		<module>yangxi-boot-archetype</module>
-		<module>yangxi-boot-common</module>
+		<module>yangxi-boot-framework</module>
 		<module>yangxi-boot-dependencies</module>
 		<module>yangxi-boot-parent</module>
 		<module>yangxi-boot-sample</module>

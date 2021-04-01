@@ -1,10 +1,10 @@
 package ${package}.config;
 
-import com.yangxi.boot.common.core.JsonData;
-import com.yangxi.boot.common.utils.CommonUtil;
-import ${package}.domain.LoginUser;
+import com.yangxi.boot.framework.core.JsonData;
+import com.yangxi.boot.framework.web.utils.CommonUtil;
 import ${package}.exception.BizCodeEnum;
 import ${package}.utils.JWTUtil;
+import ${package}.domain.LoginUser;
 import io.jsonwebtoken.Claims;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;

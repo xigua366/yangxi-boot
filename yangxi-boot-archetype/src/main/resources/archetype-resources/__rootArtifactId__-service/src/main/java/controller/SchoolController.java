@@ -1,7 +1,7 @@
 package ${package}.controller;
 
-import com.yangxi.boot.common.core.JsonData;
-import com.yangxi.boot.common.core.PageResult;
+import com.yangxi.boot.framework.core.JsonData;
+import com.yangxi.boot.framework.core.PageResult;
 import ${package}.domain.dto.PageSchoolDTO;
 import ${package}.domain.dto.SchoolDTO;
 import ${package}.domain.query.PageSchoolQuery;

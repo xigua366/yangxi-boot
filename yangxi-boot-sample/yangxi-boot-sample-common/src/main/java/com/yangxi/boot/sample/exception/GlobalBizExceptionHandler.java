@@ -1,7 +1,7 @@
 package com.yangxi.boot.sample.exception;
 
-import com.yangxi.boot.common.core.JsonData;
-import com.yangxi.boot.common.excetion.BizException;
+import com.yangxi.boot.framework.core.JsonData;
+import com.yangxi.boot.framework.exception.BizException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;

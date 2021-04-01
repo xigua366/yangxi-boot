@@ -1,6 +1,6 @@
 package ${package}.domain.dto;
 
-import com.yangxi.boot.common.domain.dto.BaseDTO;
+import com.yangxi.boot.framework.domain.dto.BaseDTO;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;

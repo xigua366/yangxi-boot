@@ -1,6 +1,6 @@
 package com.yangxi.boot.sample.service;
 
-import com.yangxi.boot.common.core.PageResult;
+import com.yangxi.boot.framework.core.PageResult;
 import com.yangxi.boot.sample.domain.dto.PageSchoolDTO;
 import com.yangxi.boot.sample.domain.dto.SchoolDTO;
 import com.yangxi.boot.sample.domain.query.PageSchoolQuery;

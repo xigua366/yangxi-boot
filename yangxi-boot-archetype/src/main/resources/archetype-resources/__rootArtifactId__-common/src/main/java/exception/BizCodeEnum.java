@@ -1,6 +1,6 @@
 package ${package}.exception;
 
-import com.yangxi.boot.common.excetion.BaseBizCodeEnum;
+import com.yangxi.boot.framework.exception.BaseBizCodeEnum;
 
 /**
  * 业务错误码枚举定义

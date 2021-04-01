@@ -1,8 +1,8 @@
 package ${package}.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.yangxi.boot.common.core.JsonData;
-import com.yangxi.boot.common.utils.CommonUtil;
+import com.yangxi.boot.framework.core.JsonData;
+import com.yangxi.boot.framework.web.utils.CommonUtil;
 import ${package}.dao.UserDAO;
 import ${package}.domain.LoginUser;
 import ${package}.domain.entity.UserDO;

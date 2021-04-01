@@ -128,7 +128,12 @@
 		<!-- yangxi-boot 本身的一些依赖 -->
 		<dependency>
 			<groupId>com.yangxi.boot</groupId>
-			<artifactId>yangxi-boot-common</artifactId>
+			<artifactId>yangxi-boot-framework-core</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.yangxi.boot</groupId>
+			<artifactId>yangxi-boot-framework-web</artifactId>
 		</dependency>
 
 		<!-- yangxi-boot 本身的starter依赖 -->

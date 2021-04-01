@@ -1,7 +1,6 @@
 package com.yangxi.boot.sample.service;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.yangxi.boot.common.core.PageResult;
 import com.yangxi.boot.sample.domain.request.AddStudentRequest;
 import com.yangxi.boot.sample.domain.dto.PageStudentDTO;
 import com.yangxi.boot.sample.domain.dto.StudentDTO;

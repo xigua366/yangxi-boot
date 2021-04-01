@@ -1,11 +1,17 @@
 package ${package}.service;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
+import ${package}.dao.StudentDAO;
 import ${package}.domain.dto.PageStudentDTO;
 import ${package}.domain.dto.StudentDTO;
+import ${package}.domain.entity.StudentDO;
 import ${package}.domain.query.StudentQuery;
 import ${package}.domain.request.AddStudentRequest;
 import ${package}.domain.request.UpdateStudentRequest;
+import ${package}.service.StudentService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  * 学生信息Service组件

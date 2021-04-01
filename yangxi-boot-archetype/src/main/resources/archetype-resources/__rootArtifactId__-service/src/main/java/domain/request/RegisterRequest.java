@@ -1,6 +1,6 @@
 package ${package}.domain.request;
 
-import com.yangxi.boot.common.domain.request.BaseRequest;
+import com.yangxi.boot.framework.domain.request.BaseRequest;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;

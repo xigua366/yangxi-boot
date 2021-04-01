@@ -1,7 +1,7 @@
 package com.yangxi.boot.sample.domain.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
-import com.yangxi.boot.common.domain.entity.BaseEntity;
+import com.yangxi.boot.framework.domain.entity.BaseEntity;
 import lombok.Data;
 
 /**

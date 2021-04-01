@@ -1,7 +1,7 @@
 package com.yangxi.boot.sample.config;
 
-import com.yangxi.boot.common.core.JsonData;
-import com.yangxi.boot.common.utils.CommonUtil;
+import com.yangxi.boot.framework.core.JsonData;
+import com.yangxi.boot.framework.web.utils.CommonUtil;
 import com.yangxi.boot.sample.exception.BizCodeEnum;
 import com.yangxi.boot.sample.utils.JWTUtil;
 import com.yangxi.boot.sample.domain.LoginUser;

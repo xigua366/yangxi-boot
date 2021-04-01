@@ -1,6 +1,7 @@
 package com.yangxi.boot.web.config;
 
-import com.yangxi.boot.web.interceptor.DefaultWebMvcHandlerInterceptor;
+import com.yangxi.boot.framework.web.interceptor.DefaultWebMvcHandlerInterceptor;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
@@ -9,11 +10,11 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
  * @author yangxi
  * @version 1.0
  */
+@Configuration
 public class DefaultWebMvcConfigurer implements WebMvcConfigurer {
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-        // TODO
         registry.addInterceptor(new DefaultWebMvcHandlerInterceptor()).addPathPatterns("/**");
     }
 }

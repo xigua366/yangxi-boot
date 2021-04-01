@@ -1,7 +1,7 @@
 package com.yangxi.boot.web.config;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.yangxi.boot.common.core.ObjectMapperImpl;
+import com.yangxi.boot.framework.core.ObjectMapperImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -18,9 +18,4 @@ public class DefaultWebAutoConfiguration {
         return new ObjectMapperImpl();
     }
 
-      // 目前没有实现逻辑，先注释掉
-//    @Bean
-//    public DefaultWebMvcConfigurer defaultWebMvcConfigurer() {
-//        return new DefaultWebMvcConfigurer();
-//    }
 }

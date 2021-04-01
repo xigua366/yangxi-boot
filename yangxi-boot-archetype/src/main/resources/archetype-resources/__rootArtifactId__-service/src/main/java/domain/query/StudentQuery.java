@@ -1,6 +1,6 @@
 package ${package}.domain.query;
 
-import com.yangxi.boot.common.domain.query.BasePageQuery;
+import com.yangxi.boot.framework.domain.query.BasePageQuery;
 import lombok.Data;
 
 /**

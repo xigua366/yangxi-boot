@@ -1,6 +1,6 @@
 package ${package}.controller;
 
-import com.yangxi.boot.common.core.JsonData;
+import com.yangxi.boot.framework.core.JsonData;
 import ${package}.domain.request.LoginRequest;
 import ${package}.domain.request.RegisterRequest;
 import ${package}.service.UserService;
