@@ -10,7 +10,7 @@
 # yangxi-boot-parent
 基础父工程，对标spring-boot-parent
 
-# yangxi-boot-common
+# yangxi-boot-framework
 yang-boot框架自定义扩展的核心类
 
 # yangxi-boot-starters

@@ -32,7 +32,7 @@ public class MyBatisPlusGenerator {
                 .setIdType(IdType.AUTO)
                 .setDateType(DateType.ONLY_DATE)
                 // 设置生成的service接口的名字的首字母是否为I，默认Service是以I开头的
-                .setServiceName("%sService")
+                .setServiceName("%sDAO")
                 //实体类结尾名称
                 .setEntityName("%sDO")
                 //生成基本的resultMap
@@ -68,7 +68,7 @@ public class MyBatisPlusGenerator {
         PackageConfig pkConfig = new PackageConfig();
         pkConfig.setParent("com.yangxi.boot.sample")
                 .setMapper("mapper")
-                .setService("service")
+                .setService("dao")
                 .setController("controller")
                 .setEntity("domain.entity")
                 .setXml("mapper");

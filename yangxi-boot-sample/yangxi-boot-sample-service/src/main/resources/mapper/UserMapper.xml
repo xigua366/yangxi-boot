@@ -3,7 +3,7 @@
 <mapper namespace="com.yangxi.boot.sample.mapper.UserMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="com.yangxi.boot.sample.domain.entity.UserDO">
+    <resultMap id="BaseResultMap" type="UserDO">
         <id column="id" property="id" />
         <result column="phone" property="phone" />
         <result column="pwd" property="pwd" />
